@@ -1,0 +1,564 @@
+@charset="utf-8"
+/* 共通部分 */
+a{
+    text-decoration: none;
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    width:100%;
+    height:100%;
+    font-family: serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main{
+    background-color:rgb(188, 220, 233);
+    padding:50px 0;
+}
+
+/* 共通（ヘッダー） */
+header{
+    width:100%;
+    height:50px;
+    background-color:white;
+}
+
+header h1{
+    font-size: 20px;
+    padding-left:15px;
+}
+
+/* 共通（フッター） */
+footer{
+    width: 100%;
+    height:50px;
+    text-align: center;
+    padding:50px 0;
+}
+
+/* 共通（ボタン） */
+.button{
+    font-size:1.15rem;
+    background:#0bd;
+    color:white;
+    border-radius:5px;
+    padding:6px 12px;
+    border:#0bd
+}
+
+.button:hover{
+    background:#0090aa;
+}
+
+/* 共通（タイトル） */
+.main-title{
+   text-align: center; 
+   color:white;
+   background-color:rgb(82, 125, 218)
+}
+
+.container{
+  width:400px;
+  margin :0px auto; 
+  padding:20px;
+  border:1px solid black;
+  background-color:white;
+}
+
+/* index.php & new_page.php */
+.container p{
+    font-size:20px;
+}
+
+.login-title{
+    text-align: center;
+    border-bottom:1px solid black;
+}
+
+.user{
+    margin-bottom:20px;
+}
+
+.login-info{
+    width:300px;
+    padding:4px;
+}
+.login{
+    text-align:center;
+}
+
+/*login_data.php*/
+.insert{
+    text-align: center;
+    border-bottom:1px solid black;
+}
+.login-back{
+    text-align: center;
+}
+
+/* mypage.php(false)*/
+.miss{
+    text-align: center;
+    font-weight: bold;
+    font-size:1.35rem;
+}
+
+.back-top{
+    text-align: center;
+    margin-right:125px;
+}
+
+/* mypage.php(true) */
+span{
+    font-weight: bold;
+    color:red;
+}
+
+.text-p{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.flex{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.btn-a{
+    font-size:1.15rem;
+    background:rgb(170, 167, 167);
+    color:black;
+    border-radius:5px;
+    padding:6px 12px;
+    border:rgb(68, 63, 63);
+    margin-top:7px;
+}
+
+.btn-a:hover{
+    background:rgb(90, 87, 87);
+}
+
+.name{
+    text-align: center;
+    font-weight: bold;
+    border-bottom: solid 1px black;
+}
+
+.block{
+    text-align: center;
+}
+
+.pref1 {
+	overflow: hidden;
+	width: 90%;
+	margin: 2em auto;
+	text-align: center;
+}
+
+.pref1 select {
+	width: 100%;
+	padding-right: 1em;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.pref1 select::-ms-expand {
+    display: none;
+}
+
+.pref1.pref2 {
+	position: relative;
+	border: 1px solid #bbbbbb;
+	border-radius: 2px;
+	background: #ffffff;
+}
+
+.pref1.pref2::before {
+	position: absolute;
+	top: 0.8em;
+	right: 0.9em;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #666666;
+	pointer-events: none;
+}
+
+.pref1.pref2 select {
+	padding: 8px 38px 8px 8px;
+	color: #666666;
+}
+
+.retrieval{
+    text-align:center;
+}
+
+/* delete.php */
+.withdrawal{
+    text-align: center;
+    border-bottom:1px solid black;
+}
+
+/* search.php $ detail.php*/
+.btn-s{
+    text-align:center;
+}
+
+.pref-t{
+    width: 100%;
+    border-collapse:separate;
+    border-spacing: 0;
+    margin-top:40px;
+  }
+  
+  .pref-t th:first-child{
+    border-radius: 5px 0 0 0;
+  }
+  
+  .pref-t th:last-child{
+    border-radius: 0 5px 0 0;
+    border-right: 1px solid #3c6690;
+  }
+  
+  .pref-t th{
+    text-align: center;
+    color:white;
+    background: linear-gradient(#829ebc,#225588);
+    border-left: 1px solid #3c6690;
+    border-top: 1px solid #3c6690;
+    border-bottom: 1px solid #3c6690;
+    box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+    width: 25%;
+    padding: 10px 0;
+  }
+  
+  .pref-t td{
+    text-align: center;
+    border-left: 1px solid #a8b7c5;
+    border-bottom: 1px solid #a8b7c5;
+    border-top:none;
+    box-shadow: 0px -3px 5px 1px #eee inset;
+    width: 25%;
+    padding: 10px 0;
+  }
+  
+  .pref-t td:last-child{
+    border-right: 1px solid #a8b7c5;
+  }
+  
+  .pref-t tr:last-child td:first-child {
+    border-radius: 0 0 0 5px;
+  }
+  
+  .pref-t tr:last-child td:last-child {
+    border-radius: 0 0 5px 0;
+  }
+  
+/* update.php */
+.space{
+    margin-bottom:20px;
+    border-radius: 5px;
+}
+
+.update{
+    text-align: center;
+}
+
+.update-info{
+    width:300px;
+    padding:4px;
+}
+
+.update-t{
+    font-weight:bold;
+}
+
+/* new_data.php */
+.detail-b{
+    text-align: center;
+}
+
+/* check.php */
+.check-p{
+    text-align: center;
+    border-bottom:solid 1px black;
+    font-weight:bold;
+}
+.flex-c{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* search.php 都道府県 */
+.block-c a {
+	position: relative;
+	padding: 0.1em 0.3em;
+	display: inline-block;
+	transition: .3s;
+	color: white;
+}
+.block-c a::before,
+.block-c a::after {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 1px;
+	background-color: white;
+	transition: .3s;
+}
+.block-c a::before {
+	top: 0;
+	left: 0;
+}
+.block-c a::after {
+	bottom: 0;
+	right: 0;
+}
+.block-c a:hover::before,
+.block-c a:hover::after {
+	width: 100%;
+}
+
+.block-c td{
+    color:black;
+}
+.block-c tr:nth-of-type(2){
+    background-color:rgb(77, 144, 245);
+
+}
+
+.block-c tr:nth-of-type(3){
+    background-color: rgb(143, 188, 255);
+}
+
+.block-c tr:nth-of-type(4){
+    background-color: rgb(143, 188, 255);
+}
+.block-c tr:nth-of-type(5){
+    background-color: rgb(143, 188, 255);
+}
+
+.block-c tr:nth-of-type(6){
+    background-color: rgb(143, 188, 255);
+}
+
+.block-c tr:nth-of-type(7){
+    background-color: rgb(143, 188, 255);
+}
+
+.block-c tr:nth-of-type(8){
+    background-color:#65cfe2;
+}
+
+.block-c tr:nth-of-type(9){
+    background-color:#65cfe2;
+}
+
+.block-c tr:nth-of-type(10){
+    background-color:#65cfe2;
+}
+
+.block-c tr:nth-of-type(11){
+    background-color:#65cfe2;
+}
+
+.block-c tr:nth-of-type(12){
+    background-color:#65cfe2;
+}
+
+.block-c tr:nth-of-type(13){
+    background-color:#65cfe2;
+}
+
+.block-c tr:nth-of-type(14){
+    background-color:#65cfe2;
+}
+
+.block-c tr:nth-of-type(15){
+    background-color:#58e276;
+}
+
+.block-c tr:nth-of-type(16){
+    background-color:#58e276;
+}
+
+.block-c tr:nth-of-type(17){
+    background-color:#58e276;
+}
+
+.block-c tr:nth-of-type(18){
+    background-color:#58e276;
+}
+
+.block-c tr:nth-of-type(19){
+    background-color:#58e276;
+}
+
+.block-c tr:nth-of-type(20){
+    background-color:#58e276;
+}
+
+.block-c tr:nth-of-type(21){
+    background-color:#58e276;
+}
+
+.block-c tr:nth-of-type(22){
+    background-color:#58e276;
+}
+
+.block-c tr:nth-of-type(23){
+    background-color:#58e276;
+}
+
+.block-c tr:nth-of-type(24){
+    background-color:#e6b30f;
+}
+
+.block-c tr:nth-of-type(25){
+    background-color:#e6b30f;
+}
+
+.block-c tr:nth-of-type(26){
+    background-color:#e6b30f;
+}
+
+.block-c tr:nth-of-type(27){
+    background-color:#e6b30f;
+}
+
+.block-c tr:nth-of-type(28){
+    background-color:#e6b30f;
+}
+
+.block-c tr:nth-of-type(29){
+    background-color:#e6b30f;
+}
+
+.block-c tr:nth-of-type(30){
+    background-color:#e6b30f;
+}
+
+.block-c tr:nth-of-type(31){
+    background-color:#f8861b;
+}
+
+.block-c tr:nth-of-type(32){
+    background-color:#f8861b;
+}
+
+.block-c tr:nth-of-type(33){
+    background-color:#f8861b;
+}
+
+.block-c tr:nth-of-type(34){
+    background-color:#f8861b;
+}
+
+.block-c tr:nth-of-type(35){
+    background-color:#f8861b;
+}
+
+.block-c tr:nth-of-type(36){
+    background-color:#f5481d;
+}
+
+.block-c tr:nth-of-type(37){
+    background-color:#f5481d;
+}
+
+.block-c tr:nth-of-type(38){
+    background-color:#f5481d;
+}
+
+.block-c tr:nth-of-type(39){
+    background-color:#f5481d;
+}
+    
+.block-c tr:nth-of-type(40){
+    background-color:#f068d2;
+}
+
+.block-c tr:nth-of-type(41){
+    background-color:#f068d2;
+}
+
+.block-c tr:nth-of-type(42){
+    background-color:#f068d2;
+}
+
+.block-c tr:nth-of-type(42){
+    background-color:#f068d2;
+}
+
+.block-c tr:nth-of-type(43){
+    background-color:#f068d2;
+}
+
+.block-c tr:nth-of-type(44){
+    background-color:#f068d2;
+}
+
+.block-c tr:nth-of-type(45){
+    background-color:#f068d2;
+}
+
+.block-c tr:nth-of-type(46){
+    background-color:#f068d2;
+}
+
+.block-c tr:nth-of-type(47){
+    background-color:#f068d2;
+}
+
+/* detail.php リンク */
+.link-cd a {
+	position: relative;
+	padding: 0.1em 0.3em;
+	display: inline-block;
+	transition: .3s;
+	color: rgb(195, 140, 231);
+}
+.link-cd a::before,
+.link-cd a::after {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 1px;
+	background-color:rgb(195, 140, 231) ;
+	transition: .3s;
+}
+.link-cd a::before {
+	top: 0;
+	left: 0;
+}
+.link-cd a::after {
+	bottom: 0;
+	right: 0;
+}
+.link-cd a:hover::before,
+.link-cd a:hover::after {
+	width: 100%;
+}
+
+
+
+
+
+
