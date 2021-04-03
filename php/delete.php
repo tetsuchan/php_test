@@ -1,6 +1,6 @@
 <?php
     $id = $_GET["id"];
-    $db = mysqli_connect("localhost", "root", "", "corona");
+    $db = mysqli_connect("localhost", "root", "admin", "corona");
     $sql = "delete from login where id=".$id;
     $result = mysqli_query($db,$sql);
     mysqli_close($db);
