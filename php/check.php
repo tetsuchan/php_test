@@ -6,7 +6,7 @@
     if ( isset ($_POST["password"]) ) {
         $password = $_POST["password"];
       }
-    $db = mysqli_connect("localhost", "root", "", "corona");
+    $db = mysqli_connect("localhost", "root", "admin", "corona");
     $sql = "select * from login where id=.$id";
     $result = mysqli_query($db,$sql);
     $name = "";
