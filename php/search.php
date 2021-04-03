@@ -6,7 +6,7 @@
         $password = $_POST["password"];
       }
     $sql = "select * from info";
-    $db = mysqli_connect("localhost", "root", "", "corona");
+    $db = mysqli_connect("localhost", "root", "admin", "corona");
     $result = mysqli_query($db,$sql);
     mysqli_close($db);
 ?>
