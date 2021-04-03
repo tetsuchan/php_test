@@ -1,6 +1,6 @@
 <?php
     $loginflug = false;
-    $db = mysqli_connect("localhost", "root", "", "corona");
+    $db = mysqli_connect("localhost", "root", "admin", "corona");
     if ( isset ($_POST["email"]) ) {
         $email = $_POST["email"];
       }
@@ -34,7 +34,7 @@
     <body>
         <?php
             if($loginflug){
-                $db = mysqli_connect("localhost", "root", "", "corona");
+                $db = mysqli_connect("localhost", "root", "admin", "corona");
                 $sql1 = "select * from info where pref like '".$address."%'"; 
                 $result1 = mysqli_query($db,$sql1);
                 echo '<header>
