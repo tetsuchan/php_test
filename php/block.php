@@ -7,7 +7,7 @@
       }
     $block = $_POST["block"];
     $sql = "select * from info where block='".$block."'";
-    $db = mysqli_connect("localhost", "root", "", "corona");
+    $db = mysqli_connect("localhost", "root", "admin", "corona");
     $result = mysqli_query($db,$sql);
     mysqli_close($db);
 ?>
