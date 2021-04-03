@@ -1,5 +1,5 @@
 <?php
-    $db = mysqli_connect("localhost", "root", "", "corona");
+    $db = mysqli_connect("localhost", "root", "admin", "corona");
     $name = $_POST["name"];
     $address = $_POST["address"];
     $number = $_POST["number"];
