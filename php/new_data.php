@@ -11,7 +11,7 @@
     $memo = $_POST["memo"];
     $sql = "update info set
     date='".$date."', infection=".$infection.", memo='".$memo."' where id=".$id;
-    $db = mysqli_connect("localhost", "root", "", "corona");
+    $db = mysqli_connect("localhost", "root", "admin", "corona");
     $result = mysqli_query($db,$sql);
     mysqli_close($db);
 ?>
