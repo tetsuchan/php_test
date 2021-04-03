@@ -6,7 +6,7 @@
         $password = $_GET["password"];
       }
     $id = $_GET["id"];
-    $db = mysqli_connect("localhost", "root", "", "corona");
+    $db = mysqli_connect("localhost", "root", "admin", "corona");
     $sql = "select * from info where id=".$id;
     $result = mysqli_query($db,$sql);
     mysqli_close($db);
